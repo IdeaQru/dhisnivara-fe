@@ -168,7 +168,7 @@ export default function Footer() {
         <div className="mt-8 grid gap-4 rounded-2xl bg-emerald-50/50 p-4 text-xs sm:grid-cols-3 sm:text-sm">
           <div className="flex items-center gap-2">
             <span className="text-emerald-600">📞</span>
-            <span className="text-slate-700">+62 819-3124-7823</span>
+            <span className="text-slate-700">+62 811-359-0718</span>
           </div>
           <div className="flex items-center gap-2">
             <span className="text-emerald-600">✉️</span>
