@@ -1,9 +1,9 @@
 module.exports = {
   apps: [{
-    name: 'frontend-app',
+    name: 'dhisnivara-fe-app',
     script: 'npm',
     args: 'start',
-    cwd: '/var/www/frontend',
+     cwd: '/root/dhisnivara-fe', 
     instances: 1,
     autorestart: true,
     watch: false,
