@@ -6,51 +6,68 @@ export const metadata: Metadata = {
   
   // Title Configuration
   title: {
-    default: "Dhisnivara - Jual Jamur Tiram, Shiitake, Kuping & Baglog Berkualitas | Malang",
+    default: "Dhisnivara - Premium Organic Mushroom Farming | Produsen Jamur Organik & Program Kemitraan Malang",
     template: "%s | Dhisnivara"
   },
   
   // Description
-  description: "Produsen dan supplier jamur tiram, jamur shiitake, jamur kuping, jamur tiram coklat, dan baglog jamur berkualitas tinggi di Malang. Harga terjangkau, pengiriman cepat ke seluruh Indonesia. Hubungi kami untuk pemesanan grosir dan eceran.",
+  description: "Produsen jamur organik premium (tiram putih, tiram coklat, shiitake, kuping) dengan teknologi IoT Smart Farming di Malang. Program kemitraan budidaya jamur dengan jaminan buyback Rp 15.000/kg dan sistem monitoring real-time. Investasi mulai 50 juta dengan return 12% per tahun.",
   
-  // Keywords
+  // Keywords - disesuaikan dengan konten aktual
   keywords: [
-    "jamur tiram",
-    "jamur shiitake",
-    "jamur kuping",
-    "jamur tiram coklat",
+    // Produk Utama
     "jamur tiram putih",
-    "baglog jamur",
-    "jual jamur",
-    "jual jamur tiram",
+    "jamur tiram coklat",
+    "jamur shiitake premium",
+    "jamur kuping organik",
+    "baglog jamur berkualitas",
+    
+    // Jual Beli
+    "jual jamur organik",
+    "jual jamur tiram Malang",
     "jual jamur shiitake",
-    "jual jamur kuping",
-    "jual baglog",
     "jual baglog jamur",
-    "jamur segar",
-    "jamur organik",
-    "produsen jamur",
-    "supplier jamur",
-    "distributor jamur",
+    "supplier jamur organik",
+    "distributor jamur premium",
+    
+    // Program Kemitraan
+    "kemitraan jamur",
+    "program kemitraan budidaya jamur",
+    "bisnis jamur menguntungkan",
+    "usaha budidaya jamur",
+    "franchise jamur",
+    "investasi jamur",
+    
+    // Teknologi
+    "IoT smart farming",
+    "budidaya jamur teknologi IoT",
+    "monitoring jamur otomatis",
+    "sistem penyiraman otomatis",
+    "kumbung jamur modern",
+    
+    // Jaminan & Keunggulan
+    "jaminan buyback jamur",
+    "guaranteed buyback Rp 15000",
+    "budidaya jamur tanpa risiko",
+    "supply baglog kontinu",
+    
+    // Lokasi
     "jamur Malang",
     "jamur Jawa Timur",
-    "budidaya jamur",
-    "cara budidaya jamur",
+    "produsen jamur Malang",
+    "budidaya jamur Malang",
+    "kumbung jamur Harjokuncaran",
+    "jamur Kediri",
+    
+    // Umum
+    "jamur segar kualitas ekspor",
+    "jamur organik bersertifikat",
+    "jamur food safety",
     "harga jamur tiram",
-    "harga baglog jamur",
-    "jamur berkualitas",
-    "jamur premium",
+    "cara budidaya jamur",
     "Dhisnivara",
-    "dhisnivara jamur",
-    "jamur sehat",
-    "jamur bergizi",
-    "manfaat jamur",
-    "resep jamur",
-    "olahan jamur",
-    "grosir jamur",
-    "eceran jamur",
-    "pengiriman jamur",
-    "jamur untuk kesehatan"
+    "investasi pertanian",
+    "agribisnis menguntungkan"
   ],
   
   // Author Information
@@ -60,54 +77,68 @@ export const metadata: Metadata = {
       url: "https://dhisnivara.id"
     }
   ],
-  creator: "Dhisnivara",
+  creator: "Dhisnivara Premium Organic Mushroom",
   publisher: "Dhisnivara",
   
   // Application Name
-  applicationName: "Dhisnivara",
+  applicationName: "Dhisnivara - Premium Organic Mushroom Farming",
   
   // Referrer Policy
   referrer: 'origin-when-cross-origin',
   
   // Category
-  category: 'Agriculture & Food',
+  category: 'Agriculture, Food Production, Smart Farming',
   
   // Classification
-  classification: 'Business',
+  classification: 'Business, Agriculture Technology',
   
-  // Open Graph Metadata (menggunakan file yang ada)
+  // Open Graph Metadata
   openGraph: {
     type: 'website',
     locale: 'id_ID',
     url: 'https://dhisnivara.id',
-    siteName: 'Dhisnivara',
-    title: 'Dhisnivara - Produsen Jamur Tiram, Shiitake, Kuping & Baglog Berkualitas',
-    description: 'Produsen dan supplier jamur tiram, jamur shiitake, jamur kuping, jamur tiram coklat, dan baglog jamur berkualitas tinggi di Malang. Harga terjangkau, pengiriman cepat ke seluruh Indonesia.',
+    siteName: 'Dhisnivara - Premium Organic Mushroom Farming',
+    title: 'Dhisnivara - Program Kemitraan Budidaya Jamur dengan IoT Technology & Guaranteed Buyback',
+    description: 'Produsen jamur organik premium dengan teknologi IoT Smart Farming. Program kemitraan lengkap: desain kumbung, supply baglog, jaminan buyback Rp 15.000/kg, dan monitoring real-time. Investasi mulai 50 juta, return 12%/tahun.',
     images: [
       {
         url: '/logo-dhisnivara.png',
         width: 1200,
         height: 630,
-        alt: 'Dhisnivara - Produsen Jamur Berkualitas',
+        alt: 'Dhisnivara - Premium Organic Mushroom Farming',
         type: 'image/png',
       },
       {
         url: '/jamur-1.png',
         width: 800,
         height: 800,
-        alt: 'Jamur Tiram Segar Dhisnivara',
+        alt: 'Jamur Tiram Putih Premium Kualitas Ekspor',
         type: 'image/png',
       },
       {
         url: '/jamur-2.png',
         width: 800,
         height: 800,
-        alt: 'Jamur Shiitake Berkualitas',
+        alt: 'Jamur Organik dengan IoT Smart Farming Technology',
+        type: 'image/png',
+      },
+      {
+        url: '/jamur-3.png',
+        width: 800,
+        height: 800,
+        alt: 'Shiitake Premium dan Jamur Kuping Organik',
+        type: 'image/png',
+      },
+      {
+        url: '/jamur-4.png',
+        width: 800,
+        height: 800,
+        alt: 'Program Kemitraan Budidaya Jamur Dhisnivara',
         type: 'image/png',
       }
     ],
-    emails: ['info@dhisnivara.id', 'sales@dhisnivara.id'],
-    phoneNumbers: ['+62-819-3124-7823'],
+    emails: ['info@dhisnivara.id'],
+    phoneNumbers: ['+62-811-359-0718'],
   },
   
   // Twitter Card Metadata
@@ -115,11 +146,11 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@dhisnivara',
     creator: '@dhisnivara',
-    title: 'Dhisnivara - Jual Jamur Tiram, Shiitake, Kuping & Baglog Berkualitas',
-    description: 'Produsen jamur tiram, shiitake, kuping, dan baglog berkualitas tinggi di Malang. Harga terjangkau, pengiriman ke seluruh Indonesia.',
+    title: 'Dhisnivara - Kemitraan Budidaya Jamur IoT Technology',
+    description: 'Program kemitraan budidaya jamur dengan teknologi IoT, jaminan buyback Rp 15.000/kg, dan dukungan penuh dari desain hingga pemasaran. Investasi mulai 50 juta.',
     images: {
       url: '/logo-dhisnivara.png',
-      alt: 'Dhisnivara - Produsen Jamur Berkualitas',
+      alt: 'Dhisnivara - Premium Organic Mushroom Farming',
     },
   },
   
@@ -136,17 +167,12 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
-   
+  
   },
   
   // Verification Codes
   verification: {
     google: 'f73013cebb421088',
-    yandex: 'your-yandex-verification-code',
-    yahoo: 'your-yahoo-verification-code',
-    other: {
-      me: ['info@dhisnivara.id'],
-    },
   },
   
   // Alternate Languages
@@ -154,11 +180,10 @@ export const metadata: Metadata = {
     canonical: 'https://dhisnivara.id',
     languages: {
       'id-ID': 'https://dhisnivara.id',
-      'en-US': 'https://dhisnivara.id/en',
     },
   },
   
-  // Icons (disesuaikan dengan file yang ADA di folder public/)
+  // Icons
   icons: {
     icon: [
       { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
@@ -185,7 +210,7 @@ export const metadata: Metadata = {
   // Manifest
   manifest: '/manifest.json',
   
-  // App Links (untuk mobile app jika ada)
+  // App Links
   appLinks: {
     web: {
       url: 'https://dhisnivara.id',
@@ -193,29 +218,25 @@ export const metadata: Metadata = {
     },
   },
   
-  // Archives (untuk blog/artikel jika ada)
-  archives: ['https://dhisnivara.id/blog'],
-  
-  // Assets
-  assets: ['https://dhisnivara.id/assets'],
-  
-  // Bookmarks
-  bookmarks: ['https://dhisnivara.id/produk'],
-  
-  // Other Metadata
+  // Other Metadata - disesuaikan dengan info kontak aktual
   other: {
     'contact:email': 'info@dhisnivara.id',
-    'contact:phone_number': '+62-819-3124-7823',
-    'contact:address': 'Jl. Maghenda No.88, RT.11 RW.03, Krajan, Harjokuncaran, Malang, Jawa Timur 65176',
+    'contact:phone_number': '+62-811-359-0718',
+    'contact:address': 'Jl. Maghenda No.88, RT.11 RW.03, Krajan, Harjokuncaran, Kec. Sumbermanjing Wetan, Kabupaten Malang, Jawa Timur 65176',
     'business:contact_data:street_address': 'Jl. Maghenda No.88, RT.11 RW.03, Krajan, Harjokuncaran',
     'business:contact_data:locality': 'Malang',
     'business:contact_data:region': 'Jawa Timur',
     'business:contact_data:postal_code': '65176',
     'business:contact_data:country_name': 'Indonesia',
+    'business:hours': 'Mon-Sat 08:00-17:00',
     'geo.region': 'ID-JI',
     'geo.placename': 'Malang',
     'geo.position': '-8.3535;112.7589',
     'ICBM': '-8.3535, 112.7589',
+    'price:currency': 'IDR',
+    'price:amount': '15000',
+    'product:category': 'Organic Mushroom',
+    'product:brand': 'Dhisnivara',
   },
 };
 
@@ -237,7 +258,12 @@ export default function RootLayout({
         <meta name="format-detection" content="telephone=yes" />
         <meta httpEquiv="x-ua-compatible" content="IE=edge" />
         
-        {/* Favicon Links (menggunakan file yang ada) */}
+        {/* Business Schema Meta */}
+        <meta property="business:hours:day" content="monday" />
+        <meta property="business:hours:start" content="08:00" />
+        <meta property="business:hours:end" content="17:00" />
+        
+        {/* Favicon Links */}
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -245,7 +271,7 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
         <link rel="manifest" href="/manifest.json" />
         
-        {/* Preconnect untuk performa */}
+        {/* Preconnect */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         
@@ -255,51 +281,6 @@ export default function RootLayout({
       </head>
       <body>
         {children}
-        
-        {/* Google Analytics - Ganti G-XXXXXXXXXX dengan tracking ID kamu */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-XXXXXXXXXX', {
-                page_path: window.location.pathname,
-              });
-            `,
-          }}
-        />
-        
-        {/* Meta Pixel (Facebook) - Optional */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              !function(f,b,e,v,n,t,s)
-              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-              n.queue=[];t=b.createElement(e);t.async=!0;
-              t.src=v;s=b.getElementsByTagName(e)[0];
-              s.parentNode.insertBefore(t,s)}(window, document,'script',
-              'https://connect.facebook.net/en_US/fbevents.js');
-              fbq('init', 'YOUR_PIXEL_ID');
-              fbq('track', 'PageView');
-            `,
-          }}
-        />
-        <noscript>
-          <img 
-            height="1" 
-            width="1" 
-            style={{display:'none'}}
-            src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"
-            alt=""
-          />
-        </noscript>
       </body>
     </html>
   );
