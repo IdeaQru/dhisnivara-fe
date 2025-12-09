@@ -2,6 +2,7 @@ import { Metadata, Viewport } from 'next';
 
 const baseUrl = 'https://dhisnivara.id';
 const ogImage = `${baseUrl}/og-image.jpg`;
+const logoUrl = `${baseUrl}/logo-dhisnivara.png`; // ✅ Update ke nama yang benar
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -86,7 +87,7 @@ export const metadata: Metadata = {
     canonical: baseUrl,
   },
   other: {
-    'google-site-verification': 'YOUR_GOOGLE_VERIFICATION_CODE', // Update dengan verification code dari Google Search Console
+    'google-site-verification': 'YOUR_GOOGLE_VERIFICATION_CODE',
     'msvalidate.01': 'YOUR_BING_VERIFICATION_CODE',
   },
 };

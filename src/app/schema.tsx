@@ -1,5 +1,8 @@
 'use client';
 
+const baseUrl = 'https://dhisnivara.id';
+const logoUrl = `${baseUrl}/logo-dhisnivara.png`; // ✅ Update ke nama yang benar
+
 export function SchemaOrganization() {
   const organizationSchema = {
     '@context': 'https://schema.org',
@@ -7,14 +10,14 @@ export function SchemaOrganization() {
     '@id': 'https://dhisnivara.id/#organization',
     name: 'Dhisnivara',
     url: 'https://dhisnivara.id',
-    logo: 'https://dhisnivara.id/logo.png',
+    logo: logoUrl, // ✅ Sekarang menggunakan logo yang benar
     image: 'https://dhisnivara.id/og-image.jpg',
     description: 'Penyedia jamur tiram organik berkualitas ekspor dengan program kemitraan dan investasi',
     slogan: 'Premium Organic Mushroom Farming',
     sameAs: [
-      'https://www.instagram.com/dhisnivara',
+      'https://www.instagram.com/dhisnivara.id',
       'https://www.facebook.com/dhisnivara',
-      'https://www.tiktok.com/@dhisnivara',
+      'https://www.tiktok.com/@dhisnivara.id',
       'https://www.youtube.com/@dhisnivara',
     ],
     address: {
@@ -40,7 +43,7 @@ export function SchemaOrganization() {
       '@type': 'Person',
       name: 'Dhisnivara Team',
     },
-    foundingDate: '2020', // Sesuaikan dengan tahun berdiri
+    foundingDate: '2020',
     operatingStatus: 'Operational',
   };
 
@@ -58,7 +61,7 @@ export function SchemaLocalBusiness() {
     '@type': 'LocalBusiness',
     '@id': 'https://dhisnivara.id/#localbusiness',
     name: 'Dhisnivara',
-    image: 'https://dhisnivara.id/og-image.jpg',
+    image: logoUrl, // ✅ Sekarang menggunakan logo yang benar
     description: 'Penyedia jamur organik dengan teknologi IoT monitoring dan program kemitraan',
     address: {
       '@type': 'PostalAddress',
@@ -70,8 +73,8 @@ export function SchemaLocalBusiness() {
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: '-8.6500', // Update dengan koordinat akurat
-      longitude: '110.8333', // Update dengan koordinat akurat
+      latitude: '-8.6500',
+      longitude: '110.8333',
     },
     telephone: '+62-811-359-0718',
     email: 'info@dhisnivara.id',
@@ -123,6 +126,7 @@ export function SchemaProducts() {
           '@type': 'Organization',
           name: 'Dhisnivara',
           url: 'https://dhisnivara.id',
+          logo: logoUrl,
         },
       },
       {
@@ -141,6 +145,7 @@ export function SchemaProducts() {
           '@type': 'Organization',
           name: 'Dhisnivara',
           url: 'https://dhisnivara.id',
+          logo: logoUrl,
         },
       },
       {
@@ -159,6 +164,7 @@ export function SchemaProducts() {
           '@type': 'Organization',
           name: 'Dhisnivara',
           url: 'https://dhisnivara.id',
+          logo: logoUrl,
         },
       },
       {
@@ -177,6 +183,7 @@ export function SchemaProducts() {
           '@type': 'Organization',
           name: 'Dhisnivara',
           url: 'https://dhisnivara.id',
+          logo: logoUrl,
         },
       },
     ],
@@ -201,7 +208,8 @@ export function SchemaPartnershipProgram() {
       '@type': 'Organization',
       name: 'Dhisnivara',
       url: 'https://dhisnivara.id',
-      image: 'https://dhisnivara.id/logo.png',
+      image: logoUrl,
+      logo: logoUrl,
     },
     areaServed: {
       '@type': 'Country',
@@ -251,6 +259,7 @@ export function SchemaInvestmentProgram() {
       '@type': 'Organization',
       name: 'Dhisnivara',
       url: 'https://dhisnivara.id',
+      logo: logoUrl,
     },
     feesAndCommissionsSpecification: 'Return tetap 12% per tahun dengan bunga majemuk',
     areaServed: {
