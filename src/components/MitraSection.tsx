@@ -24,7 +24,7 @@ export default function MitraSection() {
               teknologi IoT monitoring untuk kesuksesan bisnis jamur Anda.
             </p>
 
-            <div className="mt-6 flex flex-wrap gap-3">
+            {/* <div className="mt-6 flex flex-wrap gap-3">
               <Link href="/contact">
                 <button className="rounded-full bg-emerald-600 px-6 py-3 text-sm font-semibold text-white shadow-lg transition-all hover:bg-emerald-700 hover:shadow-xl">
                   Konsultasi Gratis
@@ -35,7 +35,7 @@ export default function MitraSection() {
                   Download Proposal
                 </button>
               </Link>
-            </div>
+            </div> */}
 
             <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
               <FeaturePill icon="🏗️" label="Desain & Konstruksi" />
