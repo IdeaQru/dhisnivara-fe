@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://dhisnivara.id'),
@@ -281,8 +280,6 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
       </head>
       <body>
-        <Navbar />
-
         {children}
       </body>
     </html>

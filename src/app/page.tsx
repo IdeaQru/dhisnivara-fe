@@ -8,6 +8,7 @@ import {
   SchemaInvestmentProgram,
   SchemaBreadcrumb,
 } from './schema'
+import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import ProductSection from '@/components/ProductSection'
 import MitraSection from '@/components/MitraSection'
@@ -30,6 +31,9 @@ export default function Home() {
       <SchemaPartnershipProgram />
       <SchemaInvestmentProgram />
       <SchemaBreadcrumb />
+
+      {/* Navbar - Only on Homepage */}
+      <Navbar />
 
       {/* Main Content */}
       <main>

@@ -23,23 +23,16 @@ export default function Navbar() {
       e.preventDefault()
       const id = href.replace('/#', '')
       const element = document.getElementById(id)
-      
-      if (element) {
-        const navbarHeight = 80 // tinggi navbar fixed
-        const elementPosition = element.getBoundingClientRect().top
-        const offsetPosition = elementPosition + window.pageYOffset - navbarHeight
 
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: 'smooth',
-        })
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' })
       }
       setOpen(false)
     }
   }
 
   return (
-    <header className="fixed inset-x-0 top-0 z-40 border-b border-emerald-100 bg-[#F6F3E8]/90 backdrop-blur-md">
+    <header className="border-b border-emerald-100 bg-[#F6F3E8]/90 backdrop-blur-md">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         {/* Logo + text */}
         <Link href="/" className="flex items-center gap-3">
