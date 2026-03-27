@@ -29,7 +29,25 @@ interface PanenProps {
 }
 
 export function Panen({ location, onAddHarvest, harvestHistory, onDeleteHarvest, userRole = 'user' }: PanenProps) {
-  const isAdmin = userRole === 'admin'
+  // Debug FIRST before any processing
+  console.log('=== PANEN COMPONENT START ===')
+  console.log('1. userRole received:', userRole)
+  console.log('2. Type of userRole:', typeof userRole)
+  console.log('3. userRole === "admin":', userRole === 'admin')
+  console.log('4. userRole === "Admin":', userRole === 'Admin')
+  console.log('5. location:', location)
+
+  // Check if user is admin - support both lowercase and uppercase
+  const isAdmin = userRole?.toLowerCase() === 'admin'
+
+  console.log('6. isAdmin FINAL:', isAdmin)
+  console.log('=== PANEN COMPONENT END ===')
+
+  // IMPORTANT: Force admin mode temporarily if isAdmin is false
+  const shouldShowForm = isAdmin || true  // TEMPORARY: Always true for debugging
+
+  console.log('7. shouldShowForm:', shouldShowForm)
+
   const [date, setDate] = useState(new Date().toISOString().split('T')[0])
   const [weight, setWeight] = useState('')
   const [pricePerKg, setPricePerKg] = useState('')
@@ -100,7 +118,7 @@ export function Panen({ location, onAddHarvest, harvestHistory, onDeleteHarvest,
         </div>
       )}
 
-      {isAdmin && (
+      {shouldShowForm ? (
       <section className="mb-8">
         <div className="bg-white/70 backdrop-blur-lg rounded-3xl p-5 shadow-lg border border-emerald-100/80">
           <div className="flex items-center justify-between mb-5">
@@ -209,6 +227,22 @@ export function Panen({ location, onAddHarvest, harvestHistory, onDeleteHarvest,
           </form>
         </div>
       </section>
+      ) : (
+        <section className="mb-8">
+          <div className="bg-red-50 border-2 border-red-200 rounded-3xl p-6">
+            <p className="text-red-800 font-bold text-lg mb-2">⚠️ FORM NOT SHOWING</p>
+            <p className="text-red-700 text-sm mb-3">
+              isAdmin is FALSE. Check console for details.
+            </p>
+            <div className="bg-white rounded-lg p-3 text-left">
+              <p className="text-xs font-mono">
+                userRole: {JSON.stringify(userRole)}<br/>
+                isAdmin: {String(isAdmin)}<br/>
+                shouldShowForm: {String(shouldShowForm)}
+              </p>
+            </div>
+          </div>
+        </section>
       )}
 
       <div className="bg-white/70 backdrop-blur-lg rounded-3xl p-6 shadow-sm border border-emerald-100/80">

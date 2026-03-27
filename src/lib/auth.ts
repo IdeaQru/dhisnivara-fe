@@ -19,14 +19,25 @@ export function useAuth() {
     const token = localStorage.getItem('token')
     const userStr = localStorage.getItem('user')
 
+    console.log('=== AUTH HOOK - useAuth ===')
+    console.log('1. token from localStorage:', token)
+    console.log('2. userStr from localStorage:', userStr)
+    console.log('3. Type of userStr:', typeof userStr)
+
     if (token && userStr) {
       try {
-        setUser(JSON.parse(userStr))
+        const parsedUser = JSON.parse(userStr)
+        console.log('4. Parsed user object:', parsedUser)
+        console.log('5. Parsed user.role:', parsedUser.role)
+        console.log('6. Type of parsed user.role:', typeof parsedUser.role)
+        console.log('7. parsedUser.role === "admin":', parsedUser.role === 'admin')
+        setUser(parsedUser)
       } catch (error) {
         console.error('Error parsing user data:', error)
       }
     }
 
+    console.log('========================')
     setLoading(false)
   }, [])
 

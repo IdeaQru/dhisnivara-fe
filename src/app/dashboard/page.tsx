@@ -29,6 +29,16 @@ export default function DashboardPage() {
   const [harvestHistory, setHarvestHistory] = useState<any[]>([])
   const [loading, setLoading] = useState(true)
 
+  // Debug activeTab changes
+  useEffect(() => {
+    console.log('=== ACTIVE TAB CHANGED ===')
+    console.log('1. activeTab:', activeTab)
+    console.log('2. selectedLocation:', selectedLocation)
+    console.log('3. activeTab === "panen":', activeTab === 'panen')
+    console.log('4. !!selectedLocation:', !!selectedLocation)
+    console.log('========================')
+  }, [activeTab, selectedLocation])
+
   useEffect(() => {
     if (!authLoading && !user) {
       router.push('/login')
@@ -233,14 +243,33 @@ export default function DashboardPage() {
           />
         )}
 
-        {activeTab === 'panen' && selectedLocation && (
-          <Panen
-            location={selectedLocation}
-            onAddHarvest={user.role === 'admin' ? handleAddHarvest : undefined}
-            harvestHistory={harvestHistory}
-            onDeleteHarvest={user.role === 'admin' ? handleDeleteHarvest : undefined}
-            userRole={user.role}
-          />
+        {activeTab === 'panen' && (
+          <>
+            {console.log('=== DASHBOARD PANEN TAB ===')}
+            {console.log('1. user object:', user)}
+            {console.log('2. user.role:', user.role)}
+            {console.log('3. Type of user.role:', typeof user.role)}
+            {console.log('4. user.role === "admin":', user.role === 'admin')}
+            {console.log('5. user.role?.toLowerCase():', user.role?.toLowerCase())}
+            {console.log('6. selectedLocation:', selectedLocation)}
+            {console.log('===============================')}
+
+            {!selectedLocation ? (
+              <div className="bg-red-50 border-2 border-red-200 rounded-3xl p-6 text-center">
+                <p className="text-red-800 font-bold text-lg mb-2">⚠️ LOCATION NOT FOUND</p>
+                <p className="text-red-700 text-sm">selectedLocation is null or undefined</p>
+                <p className="text-red-600 text-xs mt-2">locations.length: {locations.length}</p>
+              </div>
+            ) : (
+              <Panen
+                location={selectedLocation}
+                onAddHarvest={user.role === 'admin' ? handleAddHarvest : undefined}
+                harvestHistory={harvestHistory}
+                onDeleteHarvest={user.role === 'admin' ? handleDeleteHarvest : undefined}
+                userRole={user.role}
+              />
+            )}
+          </>
         )}
 
         {activeTab === 'keuangan' && <Keuangan userRole={user.role} />}

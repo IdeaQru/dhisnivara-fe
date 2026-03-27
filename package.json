@@ -12,7 +12,7 @@
     "pm2:restart": "pm2 restart ecosystem.config.js",
     "pm2:delete": "pm2 delete ecosystem.config.js",
     "pm2:logs": "pm2 logs frontend-app",
-      "build:prod": "next build && xcopy /E /I .next\\standalone\\* ..\\backend\\dist\\ && xcopy /E /I .next\\static ..\\backend\\dist\\.next\\static\\ && xcopy /E /I public ..\\backend\\dist\\public\\"
+    "build:prod": "next build && xcopy /E /I .next\\standalone\\* ..\\backend\\dist\\ && xcopy /E /I .next\\static ..\\backend\\dist\\.next\\static\\ && xcopy /E /I public ..\\backend\\dist\\public\\"
   },
   "dependencies": {
     "http-proxy-middleware": "^3.0.5",
@@ -34,7 +34,7 @@
     "@types/react-dom": "^19",
     "autoprefixer": "^10.4.22",
     "babel-plugin-react-compiler": "1.0.0",
-    "baseline-browser-mapping": "^2.10.10",
+    "baseline-browser-mapping": "^2.10.11",
     "eslint": "^9",
     "eslint-config-next": "16.0.7",
     "postcss": "^8.5.6",
